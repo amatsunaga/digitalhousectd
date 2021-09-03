@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Au Au Pet Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="https://cdn.pixabay.com/photo/2018/05/26/18/06/dog-3431913__340.jpg"
+        alt="Logotipo com desenho de filhote de cachorro"
+      />
+      <h1 id="title">Au Au Pet Shop</h1>
+    </header>
+    <main>
+      <form action="/registro" method="GET" id="petshop">
+        <fieldset form="petshop">
+          <legend>
+            <h2>Dados do Pet</h2>
+          </legend>
+          <div>
+            <label for="petname" class="datatype">Nome:</label>
+            <input
+              type="text"
+              class="textarea"
+              name="petname"
+              id="petname"
+              placeholder="Nome do seu amigão"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="dateofbirth" class="datatype"
+              >Data de nascimento:</label
+            >
+            <input
+              type="date"
+              class="textarea"
+              name="dateofbirth"
+              id="dateofbirth"
+            />
+          </div>
+          <div>
+            <label for="breed" class="datatype">Raça:</label>
+            <select class="textarea" name="breed" id="breed">
+              <option value="none"></option>
+              <option value="shitzu">Shih-tzu</option>
+              <option value="lhasa">Lhasa apso</option>
+              <option value="maltes">Maltês</option>
+              <option value="spitz">Spitz alemão</option>
+              <option value="chihuahua">Chihuahua</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset form="petshop">
+          <legend>
+            <h2>Dados do Tutor</h2>
+          </legend>
+          <div>
+            <label for="tutorname" class="datatype">Nome:</label>
+            <input
+              type="text"
+              class="textarea"
+              name="tutorname"
+              id="tutorname"
+              placeholder="Seu nome aqui"
+              required
+            />
+          </div>
+          <div>
+            <label for="surname" class="datatype">Sobrenome:</label>
+            <input
+              type="text"
+              class="textarea"
+              name="surname"
+              id="surname"
+              placeholder="Seu sobrenome aqui"
+            />
+          </div>
+          <div>
+            <label for="phone" class="datatype">Telefone:</label>
+            <input type="tel" class="textarea" name="phone" id="phone" />
+          </div>
+        </fieldset>
+
+        <fieldset form="petshop">
+          <legend>
+            <h2>Você e Seu Pet</h2>
+          </legend>
+          <div>
+            <textarea
+              name="activities"
+              id="activities"
+              cols="88"
+              rows="10"
+              placeholder="Conte-nos um pouco mais sobre o que vocês adoram fazer juntos!"
+            ></textarea>
+          </div>
+        </fieldset>
+        <div>
+          <button type="reset">Limpar tudo</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
