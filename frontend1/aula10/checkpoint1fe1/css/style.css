@@ -1,0 +1,119 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------- */
+
+body {
+  background-color: #cccccc;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://i.pinimg.com/originals/28/e3/c4/28e3c4a9f80aa7b99988366c90f78f66.jpg');
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+}
+
+header {
+  background-image: linear-gradient(
+    rgba(53, 25, 179, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  margin: 10px;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  color: rgb(236, 216, 216);
+  text-shadow: 4px 4px rgb(0, 0, 0);
+  display: inline;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  top: -35px;
+}
+
+main {
+  margin: 30px 15px;
+  text-align: justify;
+}
+
+.introduction,
+.curiosities {
+  width: 1280px;
+  margin: auto;
+  padding: 30px;
+  font-size: 1.2rem;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.6), rgba(15, 4, 65, 0.4));
+}
+
+p {
+  line-height: 40px;
+}
+
+iframe {
+  border: none;
+  display: block;
+  margin: 50px auto;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  color: rgb(248, 239, 239);
+  text-align: center;
+  margin: 30px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+}
+
+.curiosity {
+  margin: 30px;
+}
+
+footer {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(53, 25, 179, 0.5)
+  );
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+#cta {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgba(12, 3, 51, 1);
+}
+
+a {
+  text-align: center;
+}
+
+i {
+  font-size: 2rem;
+  color: rgb(236, 216, 216);
+  text-shadow: 2px 2px rgba(12, 3, 51, 0.6);
+  margin: 0 auto;
+}
+
+.icon-youtube {
+  margin-right: 50px;
+}
