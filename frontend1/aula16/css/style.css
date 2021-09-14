@@ -1,0 +1,40 @@
+img {
+  width: 30%;
+}
+
+li:hover {
+  background-color: blueviolet;
+}
+
+#li1::first-letter {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+li:target {
+  border: 5px solid purple;
+  background-color: lightgray;
+}
+
+input:focus {
+  background-color: cyan;
+}
+
+input:checked {
+  width: 50px;
+  height: 50px;
+}
+
+li:nth-child(2) {
+  font-weight: bolder;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+button:enabled {
+  background-color: green;
+  color: white;
+}
