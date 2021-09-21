@@ -1,0 +1,41 @@
+#bola {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  margin-top: 30px;
+  margin-left: 30px;
+  animation: esquerdaDireita 4s infinite;
+}
+
+@keyframes esquerdaDireita {
+  0% {opacity: 0%}
+  25% {opacity: 100%}
+  100% {opacity: 0%; transform: translateX(500px)}
+}
+
+.logo {
+  margin: 100px 200px 50px;
+  width: 30%;
+}
+
+.logo:hover {
+  transform: scale(2) skew(30deg);
+}
+
+button {
+  display: block;
+  margin: 30px 250px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  transition:
+    background-color, 1s,
+    color, 1s;
+}
+
+button:hover {
+  background-color: fuchsia;
+  color: yellow;
+}
