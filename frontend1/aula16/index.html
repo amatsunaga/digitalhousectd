@@ -4,50 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mesa de Trabalho 16</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Mesa de Trabalho</h1>
-    <h2>Exercício</h2>
+    <header>
+      <h1>Mesa de Trabalho</h1>
+      <h2>Atribuição de pseudo-classes e pseudo-elementos</h2>  
+    </header>
 
-    <p>Aqui você deve seguir as regras:</p>
-
-    <ol>
-      <li id="li1">Faça isso ou aquilo e aquilo outro também.</li>
-      <li>Pera, uva, maçã, salada mista.</li>
-      <li>Marquei um x, um x, um x no seu coração!</li>
-      <li><a href="#li1">Vá para o primeiro item da lista.</a></li>
-      <li>
-        <a href="https://www.google.com" target="_blank"
-          >Vá para o site do Google.</a
-        >
-      </li>
-      <div>
-        <img
-          src="https://all.accor.com/magazine/imagerie/ferias-na-praia-o-que-fazer-das-f163.jpg"
-          alt="Foto de um abacaxi usando óculos-escuros na praia"
-        />
+    <main>
+      <div class="lista">
+        <p>Aqui vai uma lista:</p>
+        <ol>
+          <li id="li1">Pseudo-elemento ::first-element.</li>
+          <li>Pseudo-classe :nth-child(2).</li>
+          <li id="li3">Eu estou no html. </li>
+          <li><a href="#li1">Vá para o primeiro item da lista e veja o que acontece.</a></li>
+          <li id="li5">
+            <a href="https://www.google.com" target="_blank"
+              >Vá para o site do Google e veja o que faz a pseudo-classe :active.</a
+            >
+          </li>
+        </ol>
       </div>
-    </ol>
+     
+      <div class="imagem">
+        <p>Tem um transform aqui nessa imagem:</p>
+          <img
+            src="https://all.accor.com/magazine/imagerie/ferias-na-praia-o-que-fazer-das-f163.jpg"
+            alt="Foto de um abacaxi usando óculos-escuros na praia"
+          />
+      </div>
 
-    <label for="nome" id="labelnome">Nome:</label>
-    <input type="text" name="nome" id="nome" />
-
-    <div>
-      <fieldset>
-        <legend>Qual esporte prefere?</legend>
-        <input type="checkbox" name="hobbies" value="tenis" />
-        <label for="tenis">Tênis</label>
-        <input type="checkbox" name="hobbies" value="xadrez" checked />
-        <label for="xadrez">Xadrez</label>
-        <input type="checkbox" name="hobbies" value="Dança" />
-        <label for="dança">Dança</label>
-      </fieldset>
-      <div>
+      <div class="formulario">
+        <p>E aqui vai um formulário:</p>
+        <form action="" method="POST" name="form1"></form>
+          <fieldset form="form1">
+            <label for="nome" id="labelnome">Qual seu nome?</label>
+            <input type="text" name="nome" id="nome" required />
+          </fieldset>
+    
+          <fieldset form="form1"> 
+            <legend>Qual esporte prefere?</legend>
+              <input type="checkbox" name="hobbies" id="tenis" value="tenis" />
+              <label for="tenis">Tênis</label>
+              <input type="checkbox" name="hobbies" id="xadrez" value="xadrez" checked />
+              <label for="xadrez">Xadrez</label>
+              <input type="checkbox" name="hobbies" id="dança" value="Dança" />
+              <label for="dança">Dança</label>
+          </fieldset>
+      </div>
+      
+      <div class="botoes">
         <button type="reset" enabled>Limpar tudo</button>
         <button type="submit" disabled>Enviar</button>
       </div>
-    </div>
+
+    </main>
   </body>
 </html>

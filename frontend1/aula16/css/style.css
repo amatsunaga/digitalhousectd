@@ -1,33 +1,55 @@
-img {
-  width: 30%;
-}
-
 li:hover {
-  background-color: blueviolet;
+  background-color: rgb(72, 125, 194);
 }
 
 #li1::first-letter {
-  color: red;
+  color: rgb(17, 0, 255);
   font-size: 30px;
   font-weight: bold;
 }
 
+li:nth-child(2) {
+  font-weight: bolder;
+  color: rgb(6, 100, 22);
+}
+
+#li3::after {
+  content: "Eu estou no css.";
+  font-style: italic;
+  font-weight: bold;
+}
+
 li:target {
-  border: 5px solid purple;
-  background-color: lightgray;
+  border: 5px solid rgb(17, 0, 255);
+  background-color: rgb(233, 82, 27);
+}
+
+#li5 a:active {
+  background-color: yellow;
+  color:rgb(17, 0, 255);
+}
+
+img {
+  width: 30%;
+  display: flex;
+  margin: auto;
+}
+
+img:hover {
+  transform: scale(2) rotate(150deg);
 }
 
 input:focus {
-  background-color: cyan;
+  background-color: rgb(0, 255, 128);
 }
 
 input:checked {
-  width: 50px;
-  height: 50px;
+  width: 2em;
+  height: 2em;
 }
 
-li:nth-child(2) {
-  font-weight: bolder;
+button {
+  margin-top: 10px;
 }
 
 button:disabled {
