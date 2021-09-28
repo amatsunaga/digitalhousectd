@@ -1,0 +1,117 @@
+/* ==========================================
+Tipografia
+ ==========================================*/
+
+ h1 {
+    text-align: center;
+    color: #000;
+    font-size: 6em;
+    font-family: "Roboto", arial, helvetica;
+  }
+  
+  h2{
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    font-family: "Roboto", arial, helvetica;
+  }
+  
+  p {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+  }
+  h4 {
+    margin: 0 0 20px 0;
+}
+
+body{
+
+    background-image: url(../img/bh.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container-form{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    height: 499px;
+    display: flex;
+    align-items: center;
+  }
+.layer{
+
+    background-color: #fff;
+    padding:0 10%;
+    height: 49vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulo-form titulo-form" 
+    "form-coluna-1 form-coluna-2";
+
+}
+.titulo-form{
+    grid-area: titulo-form;
+    font-size:2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-coluna-1{
+width: 100%;
+grid-area: form-coluna-1;
+
+}
+.form-coluna-2{
+width: 100%;
+grid-area: form-coluna-2;
+}
+
+.form-coluna-1 + .form-coluna-2{
+     margin-left: 10px;
+}
+
+/* ==========================================
+Formularios 
+ ==========================================*/
+
+.label-block{
+    display: block;
+    margin-bottom: 10px;
+    }
+    input, select {
+        margin-bottom: 10px;
+        border: 2px solid #675e5e;
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+
+    button {
+        padding: 7px;
+        background-color: #17710d;
+        color: #fff;
+        border: none;
+        margin-top: 20px;
+    }
+    button + button {
+        margin-left: 30px;
+    }
+    fieldset {
+        padding: unset;
+        border: none;
+    }

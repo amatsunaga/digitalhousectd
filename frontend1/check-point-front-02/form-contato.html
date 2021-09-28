@@ -1,0 +1,90 @@
+<!--  Autor: Filipe Campos Fontes
+         Andrea Matsunaga
+          Marcos Araujo
+
+  Turma CTD: 2NT
+  DATA: 25/09/2021 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style-contato.css" />
+    <title>Entre em contato</title>
+  </head>
+  <body>
+    <div class="container-form">
+      <div class="layer">
+        <form>
+        <div class="content">
+            <div class="titulo-form">Deixe seu recadinho para os mineiros</div>
+            <fieldset form="filds-col1-form">
+            <div class="form-coluna-1">
+           
+              <label class="label-block" for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Nome" maxlength="100" />
+
+              <label class="label-block" for="email">E-mail</label>
+              <input type="email" id="email" placeholder="email" />
+
+              <label class="label-block"  for="telefone">Telefone</label>
+              <input type="tel" id="telefone" placeholder="Telefone" />
+
+              <label  class="label-block" for="dtnasc">Aniversario</label>
+              <input type="date" id="dtnasc" placeholder="Aniversario" />
+                           
+          </div>
+        </fieldset>
+        <fieldset form="filds-col2-form">
+          <div class="form-coluna-2">
+               <h4>Você tem 18 anos ou mais?</h4>
+            <input
+            type="radio"
+            id="idmenor"
+            name="idMaior-menor"
+            value="Menor de idade"
+          />
+          <label for="idmenor">Não</label>
+          
+          <input
+            type="radio"
+            id="idmaior"
+            name="idMaior-menor"
+            value="Maior de idade"
+          /><label for="idmaior">Sim, tenho 18+</label>
+
+          <h4>Quais pontos de BH que mais gosta</h4>
+            <select name="gosto">
+                <option value="gosto1">Igreja da pampulha</option>
+                <option value="gosto2" selected>Os bares</option>
+                <option value="gosto3">Praça da estação</option>
+                <option value="gosto4">Mineirão</option>
+                <option value="gosto5">Parque Municipal</option>
+              </select>
+
+              <h4>O que te trouxe a BH?</h4>
+
+              <input type="checkbox" id="Motivo-Turismo" name="Motivo-Belo_Horizonte" />
+              <label for="Motivo-Turismo">Turismo</label>
+
+              <input type="checkbox" id="Motivo-residente" name="Motivo-Belo_Horizonte" />
+              <label for="Motivo-residente">Residente</label>
+
+              <input type="checkbox" id="Motivo-estudante" name="Motivo-Belo_Horizonte" />
+              <label for="Motivo-estudante">Estudante</label>
+              <Button type="reset">Limpar Formularios</Button>
+              <button type="submit">Enviar</button>
+        
+          </div>
+        </fieldset>
+        </div>
+
+    </form>
+
+
+      </div>
+    </div>
+  </body>
+</html>

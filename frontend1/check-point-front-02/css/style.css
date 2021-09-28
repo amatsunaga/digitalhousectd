@@ -1,0 +1,217 @@
+/*============================================================
+ Autor: Filipe Campos Fontes
+         Andrea Matsunaga
+          Marcos Araujo
+
+  Turma CTD: 2NT
+  DATA: 25/09/2021
+  
+  ===============================================================*/
+
+  /*===================================================================
+   Importa fontes do Google Fonts
+   ========================================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Sans&family=Montserrat&display=swap");
+
+  /*===================================================================
+   Ajustes do Body
+   ========================================================================*/
+
+body {
+  padding: 0;
+  background-image: url("https://www.postalbrasil.com.br/img/conteudo/viagem/up__5f299dae519e4.jpg");
+  background-size: cover;
+  background-color: #fff;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+}
+
+/*==========================================
+ Menu lateral
+ ============================================ */
+
+.stick-menu {
+  background-color: rgb(245, 253, 252);
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+}
+
+.menu-logo {
+  display: inline-block;
+  margin: auto;
+  margin-top:20px;
+  width: 100%;
+}
+
+.menu-primario {
+  display: block;
+  width: 100%;
+  margin-top:20px;
+  margin-bottom: 50px;
+}
+
+.menu-lista {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  color: white;
+  font-size: 1.3em;
+  margin: auto;
+  text-align: left;
+}
+
+.menu-lista a + a{
+  padding-left: 0;
+  margin-top: 10px;
+  line-height: 1.3em;
+  color: rgb(22, 184, 17);
+  text-decoration: none;
+
+}
+
+.menu-lista a + a:hover {
+  background:rgb(187, 183, 183);
+}
+
+.social-icons-menu{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.contato-btn{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contato-class-bnt{
+
+  padding: 20px;
+  border: solid 1px- rgb(25, 177, 63);
+  background-color: rgb(36, 87, 17);
+  margin-top: 30px;
+  color: #fff;
+  }
+/* ==========================================
+Tipografia
+ ==========================================*/
+
+h1 {
+  text-align: center;
+  color: #000;
+  font-size: 6em;
+  font-family: "Roboto", arial, helvetica;
+}
+
+h2{
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  font-family: "Roboto", arial, helvetica;
+}
+
+p {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*==========================================
+ sessões da pagina 
+ ==========================================*/
+
+.video {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.layer {
+  position: absolute;
+  background-color: #00000080;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  width: 60%;
+  margin: 2% 30%;
+  background-color: rgba(255, 255, 255, 0.781);
+  padding: 30px;
+  z-index: 1;
+}
+
+.sessao-2colunas {
+  line-height: 1.5em;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.coluna1 {
+  width: 48%;
+ /*  display: inline-block; */
+  margin: auto;
+  float: left;
+  vertical-align: middle;
+}
+
+.coluna2 {
+  color: #000;
+  width: 48%;
+ /*  display: inline-block; */
+  margin: auto;
+  float: right;
+  vertical-align: middle;
+}
+
+.icones {
+  width: 100%;
+  text-align: center;
+}
+
+.fa-instagram {
+  color: rgb(201, 38, 179);
+  font-size: 30px;
+}
+
+.fa-youtube {
+  color: rgb(226, 19, 19);
+  font-size: 30px;
+}
+
+.fa-facebook-square {
+  color: white;
+  font-size: 30px;
+}
+
+a + a {
+  padding-left: 2em;
+}
+
+/*==========================================
+ Rodapé 
+ ==========================================*/
+
+.footer{
+
+margin-top:50px;
+text-align: center;
+
+}
