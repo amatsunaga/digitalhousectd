@@ -5,7 +5,7 @@ Tipografia
  h1 {
     text-align: center;
     color: #000;
-    font-size: 6em;
+    font-size: 2rem;
     font-family: "Roboto", arial, helvetica;
   }
   
@@ -31,31 +31,30 @@ Tipografia
 }
 
 body{
-
-    background-image: url(../img/bh.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(../img/bh.jpg);
     margin: 0;
     background-repeat: no-repeat;
     background-size: auto;
+    height: 100vh;
 }
 
 .container-form{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
     height: 499px;
+    width: 100%;
     display: flex;
     align-items: center;
   }
+
 .layer{
 
     background-color: #fff;
-    padding:0 10%;
-    height: 49vw;
+    padding:5vh 10%;
     display: flex;
     align-content: center;
     align-items: center;
+    justify-content: space-around;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 14vh auto;
 
 }
 .content{
@@ -97,8 +96,12 @@ Formularios
     input, select {
         margin-bottom: 10px;
         border: 2px solid #675e5e;
-        border-radius: 3px;
+        border-radius: 5px;
         padding: 5px 10px;
+    }
+
+    input:hover {
+      transform:scale(2);
     }
 
     button {
@@ -106,6 +109,7 @@ Formularios
         background-color: #17710d;
         color: #fff;
         border: none;
+        border-radius: 5px;
         margin-top: 20px;
     }
     button + button {
