@@ -17,77 +17,75 @@
   <body>
     <div class="container-form">
       <div class="layer">
-        <form>
-        <div class="content">
+        <form action="" method="GET" id="recadinho">
+          <div class="content">
             <div class="titulo-form">
               <h1>Deixe seu recadinho para os mineiros</h1>
-        </div>
-            <fieldset form="filds-col1-form">
-            <div class="form-coluna-1">
-           
-              <label class="label-block" for="nome">Nome:</label>
-              <input type="text" id="nome" placeholder="Nome" maxlength="100" />
+            </div>
 
-              <label class="label-block" for="email">E-mail:</label>
-              <input type="email" id="email" placeholder="E-mail" />
+            <fieldset form="recadinho">
+              <div class="form-coluna-1">            
+                <label class="label-block" for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="100" required/>
 
-              <label class="label-block"  for="telefone">Telefone:</label>
-              <input type="tel" id="telefone" placeholder="Telefone" />
+                <label class="label-block" for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required/>
 
-              <label  class="label-block" for="dtnasc">Data de nascimento:</label>
-              <input type="date" id="dtnasc" placeholder="Aniversario" />
-                           
-          </div>
-        </fieldset>
-        <fieldset form="filds-col2-form">
-          <div class="form-coluna-2">
-               <h4>Você tem 18 anos ou mais?</h4>
-            <input
-            type="radio"
-            id="idmenor"
-            name="idMaior-menor"
-            value="Menor de idade"
-          />
-          <label for="idmenor">Não</label>
-          
-          <input
-            type="radio"
-            id="idmaior"
-            name="idMaior-menor"
-            value="Maior de idade"
-          /><label for="idmaior">Sim, tenho 18+</label>
+                <label class="label-block"  for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="11999887777" pattern="[0-9]{11}" required/>
+                <small class="label-block">Somente números (DDD + telefone)</small>
 
-          <h4>Quais pontos de BH que mais gosta?</h4>
-            <select name="gosto">
-                <option value="gosto1">Igreja da pampulha</option>
-                <option value="gosto2" selected>Os bares</option>
-                <option value="gosto3">Praça da estação</option>
-                <option value="gosto4">Mineirão</option>
-                <option value="gosto5">Parque Municipal</option>
-              </select>
-
-              <h4>O que te trouxe a BH?</h4>
-
-              <input type="checkbox" id="Motivo-Turista" name="Motivo-Belo_Horizonte" />
-              <label for="Motivo-Turista">Turista</label>
-
-              <input type="checkbox" id="Motivo-residente" name="Motivo-Belo_Horizonte" />
-              <label for="Motivo-residente">Residente</label>
-
-              <input type="checkbox" id="Motivo-estudante" name="Motivo-Belo_Horizonte" />
-              <label for="Motivo-estudante">Estudante</label>
-              <div>
-                <button type="reset">Limpar Formulários</button>
-                <button type="submit">Enviar</button>
+                <label  class="label-block" for="dtnasc">Data de nascimento:</label>
+                <input type="date" name="dtnasc" id="dtnasc" required/>  
               </div>
+            </fieldset>
+
+            <fieldset form="recadinho">
+              <div class="form-coluna-2">
+                <h4>Você tem 18 anos ou mais?</h4>
+                
+                <input
+                type="radio"
+                id="idmenor"
+                name="idMaior-menor"
+                value="menorDeIdade"
+                />
+                <label for="idmenor">Não</label>
+
+                <input
+                type="radio"
+                id="idmaior"
+                name="idMaior-menor"
+                value="maiorDeIdade"
+                />
+                <label for="idmaior">Sim, tenho 18+</label>
+
+                <h4>Quais pontos de BH que mais gosta?</h4>
+                <select name="gosto">
+                  <option value="igrejaPampulha">Igreja da pampulha</option>
+                  <option value="bares" selected>Os bares</option>
+                  <option value="pracaEstacao">Praça da estação</option>
+                  <option value="mineirao">Mineirão</option>
+                  <option value="parqueMunicipal">Parque Municipal</option>
+                </select>
+
+                <h4>O que te trouxe a BH?</h4>
+                <input type="checkbox" id="Motivo-Turista" name="Motivo-Belo_Horizonte" value="turista"/>
+                <label for="Motivo-Turista">Turista</label>
+                <input type="checkbox" id="Motivo-residente" name="Motivo-Belo_Horizonte" value="residente"/>
+                <label for="Motivo-residente">Residente</label>
+                <input type="checkbox" id="Motivo-estudante" name="Motivo-Belo_Horizonte" value="estudante"/>
+                <label for="Motivo-estudante">Estudante</label>
+              
+                <div class="buttons">
+                  <button type="reset">Limpar Formulários</button>
+                  <button type="submit">Enviar</button>
+                </div>
        
+              </div>
+            </fieldset>
           </div>
-        </fieldset>
-        </div>
-
-    </form>
-
-
+        </form>
       </div>
     </div>
   </body>

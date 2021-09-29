@@ -2,7 +2,7 @@
 Tipografia
  ==========================================*/
 
- h1 {
+  h1 {
     text-align: center;
     color: #000;
     font-size: 2rem;
@@ -21,14 +21,18 @@ Tipografia
     font-size: 50px;
     font-family: "Roboto", arial, helvetica;
   }
-  
+
+  h4 {
+    margin: 0 0 2vh 0;
+    font-weight: normal;
+  }
+
   p {
     color: #000;
     font-family: "Montserrat", sans-serif;
   }
-  h4 {
-    margin: 0 0 20px 0;
-}
+
+
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(../img/bh.jpg);
@@ -46,7 +50,6 @@ body{
   }
 
 .layer{
-
     background-color: #fff;
     padding:5vh 10%;
     display: flex;
@@ -55,8 +58,8 @@ body{
     justify-content: space-around;
     width: 70%;
     margin: 14vh auto;
-
 }
+
 .content{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -67,10 +70,16 @@ body{
 }
 .titulo-form{
     grid-area: titulo-form;
-    font-size:2em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 3vh;
+    animation: fantasma 1s 5;
 }
+
+@keyframes fantasma {
+  0% {opacity: 0%}
+  100% {opacity: 100%; background-color: #17710d; border-radius: 25px;}
+}
+
 .form-coluna-1{
 width: 100%;
 grid-area: form-coluna-1;
@@ -82,22 +91,27 @@ grid-area: form-coluna-2;
 }
 
 .form-coluna-1 + .form-coluna-2{
-     margin-left: 10px;
+     margin-left: 10vw;
 }
 
 /* ==========================================
 Formularios 
  ==========================================*/
 
+ fieldset {
+  padding: unset;
+  border: none;
+}
+
 .label-block{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
     }
     input, select {
-        margin-bottom: 10px;
+        margin-bottom: 2vh;
         border: 2px solid #675e5e;
         border-radius: 5px;
-        padding: 5px 10px;
+        padding: 1vh 1vw;
     }
 
     input:hover {
@@ -105,17 +119,19 @@ Formularios
     }
 
     button {
-        padding: 7px;
+        padding: 1.3vh 1.3vw;
         background-color: #17710d;
         color: #fff;
         border: none;
         border-radius: 5px;
-        margin-top: 20px;
+        margin-top: 3vh;
     }
     button + button {
-        margin-left: 30px;
+        margin-left: 2.5vw;
     }
-    fieldset {
-        padding: unset;
-        border: none;
+
+    button:hover {
+      background-color: rgb(37, 37, 214);
     }
+
+
