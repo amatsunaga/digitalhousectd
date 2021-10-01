@@ -1,0 +1,130 @@
+/*
+Alunos:
+Filipe Campos
+Andrea Matsunaga
+Marcos Araújo
+ */
+
+
+:root {
+    --primarycolor:#9c1616;
+    --secundarycolor:#666;
+  }
+
+  /* ----------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  font-size: 16px;
+}
+
+header {
+  min-height: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.bg-gil{
+    background-color: var(--primarycolor);
+}
+
+h1{
+    color:var(--primarycolor);
+}
+
+.h1-grid {
+  font-size: 1.5rem !important;
+}
+
+.card-img{
+    min-height: 400px;
+}
+.slide-gil{
+    height:700px;
+}
+
+.parallax {
+  height:700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top:15%
+}
+
+.slide1{
+background-image: url(../img/Frente.jpg);
+}
+
+.slide2{
+  background-image: url(../img/DSC_0148-001.JPG);
+}
+
+.slide3{
+  background-image: url(../img/Barroca.JPG);
+}
+
+.btn-banner{
+background-color:var(--primarycolor);
+color: #fff;
+padding: 10px 20px 10px 20px;
+border: solid 2px;
+margin-top: 50px;
+}
+
+.tit-banner{
+font-size:3em;
+color: #fff;
+width: 50%;
+margin: auto;
+}
+
+.card:hover{
+/* margin: auto; */
+transform: scale(1.2);
+z-index:1;
+opacity: 0.8;
+}
+
+.btn-grid{
+  padding: 10px 20px 10px 20px;
+  background-color:var(--primarycolor);
+  color: #fff;
+}
+
+.btn-grid > a{
+  color: #fff;
+}
+
+.btn-grid:hover{
+  background-color:var(--secundarycolor);
+}
+
+.container-form {
+  background-color: var(--primarycolor);
+  color: #fff;
+}
+
+small a {
+  color: var(--secundarycolor);
+  text-decoration: none;
+}
+
+small a:hover {
+  color: #fff;
+}
+
+.nav-buttons:hover {
+  color: var(--primarycolor);
+}
+
+@media only screen and (max-device-width: 768px) {
+  .slide-gil {
+    display: none;
+  }
+  .album-width {
+    width: 100%;
+  }
+}
