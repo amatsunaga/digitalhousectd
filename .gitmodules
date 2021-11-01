@@ -4,3 +4,6 @@
 [submodule "introducaoainformatica/aula5/modules"]
 	path = introducaoainformatica/aula5/modules
 	url = https://github.com/thipfunari/Aula5-Colaborativo
+[submodule "introducaoainformatica/aula5/module-Aula5-Colaborativo"]
+	path = introducaoainformatica/aula5/module-Aula5-Colaborativo
+	url = https://github.com/thipfunari/Aula5-Colaborativo
