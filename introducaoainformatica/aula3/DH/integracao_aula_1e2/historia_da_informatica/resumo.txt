@@ -1,0 +1,6 @@
+ A  mãe dos computadores é Ada Lovelace, que projetou o primeiro 
+ esquema de um computador, no século XIX.
+
+ Alan Turing criou a Máquina de Turing, que é a primeira representação moderna do funcionamento de um processador.
+
+ A partir daí, a informática evoluiu de forma exponencial, especialmente em capacidade computacional.

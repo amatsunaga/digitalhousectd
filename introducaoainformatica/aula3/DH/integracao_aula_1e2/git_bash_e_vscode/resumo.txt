@@ -1,0 +1,7 @@
+São ferramentas que utilizamos para auxiliar na programação.
+
+
+Git bash é um terminal Shell que pode ser usado no Windows.
+
+VSCode é um editor de código, utilizado para auxiliar na escrita e revisão de código.
+

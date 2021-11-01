@@ -1,0 +1,4 @@
+Interfaces de usuário são os meios através dos quais os usuários interagem com um computador. 
+
+Essa interfaces podem ser visuais, textuais ou, mais modernamente, naturais (que lidam com realidade virtual e similares).
+

@@ -1,0 +1,4 @@
+Hardware ou equipamento refere-se às partes físicas e tangíveis de um sistema de computador, seus componentes elétricos, eletrônicos, eletromecânicos e mecânicos. Exemplos de hardware são cabos, gabinetes, periféricos de todos os tipos e qualquer outro elemento físico envolvido.
+
+O sistema formal de um sistema de computador é conhecido como software ou suporte lógico, que compreende todos os componentes lógicos necessários para realizar tarefas específicas, em oposição aos componentes físicos (hardware). A interação entre software e hardware torna um computador (ou outro dispositivo) operacional, ou seja, o software envia instruções que o hardware executa, possibilitando seu funcionamento.
+

@@ -1,0 +1,4 @@
+Servidor é um computador capaz de atender às solicitações de um cliente e retornar uma resposta adequada. 
+
+Eles podem ser executados em computadores dedicados que são individualmente conhecidos como "o servidor" ou, na maioria dos casos, o mesmo computador pode fornecer vários serviços e ter vários servidores em execução.
+
