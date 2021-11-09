@@ -1,4 +1,0 @@
-Olá, mundo! (pela branch master)
-
-Olá, mundo! (new file from branch teste)
-
