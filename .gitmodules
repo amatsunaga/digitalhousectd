@@ -1,6 +1,3 @@
 [submodule "introducaoainformatica/aula5/Aula5-Colaborativo-module"]
 	path = introducaoainformatica/aula5/Aula5-Colaborativo-module
 	url = https://github.com/thipfunari/Aula5-Colaborativo
-[submodule "introducaoainformatica/submodule_mochila-turma12/mochila-turma12"]
-	path = introducaoainformatica/submodule_mochila-turma12/mochila-turma12
-	url = https://github.com/huberpoa/mochila-turma12.git
