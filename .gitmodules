@@ -4,6 +4,3 @@
 [submodule "introducaoainformatica/mochila-turma12"]
 	path = introducaoainformatica/mochila-turma12
 	url = https://github.com/huberpoa/mochila-turma12.git
-[submodule "introducaoainformatica/my_branch_mochila-turma12"]
-	path = introducaoainformatica/my_branch_mochila-turma12
-	url = https://github.com/huberpoa/mochila-turma12.git
