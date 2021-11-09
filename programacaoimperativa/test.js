@@ -1,17 +1,26 @@
-// let resultado = 0
-// console.log(resultado)
+// let texto =
+//   '     oi eu sou o vinicius. Tenho 26 anos. Moro em São Paulo. Amo viajar com meus amigos.\nHoje o dia está lindo!\n'
 
-// function multiplicar() {
-//   var multiplicacao = 3 * 2
-//   console.log(multiplicacao)
+// console.log(texto)
+
+// function removePunctuation(string) {
+//   string = string.trim()
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] == '.') {
+//       string = string.replace(string[i], '')
+//     }
+//     if (string[i] == '\n') {
+//       string = string.replace(string[i], ' ')
+//     }
+//   }
+//   return string
 // }
 
-// multiplicar()
+// console.log(removePunctuation(texto).split(' '))
 
-// console.log(multiplicacao)
+// let cores = ['Roxo', 'Laranja', 'Azul', 'Laranja']
 
-let comprarComida = function (quantidade = 1) {
-  console.log('Comprando comida')
-  const preco = quantidade * 12.5
-  const dobrarPreco = 2 * preco.comprarComida
-}
+// let newCores = cores.join(' ')
+// console.log(newCores)
+
+// console.log(cores.indexOf('Abacaxi'))

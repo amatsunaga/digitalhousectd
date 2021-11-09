@@ -117,3 +117,9 @@ i {
 .icon-youtube {
   margin-right: 50px;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+}
