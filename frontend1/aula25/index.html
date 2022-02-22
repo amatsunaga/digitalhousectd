@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, Bootstrap!</title>
+  </head>
+  <body>
+
+    <header class="sticky-top">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark my-bg-brown my-15vh">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+
+    <main>
+      <div class="banner">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://source.unsplash.com/random/1500x1024?sig=1" class="d-block w-sm-100" alt="Imagem aleatória">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/random/1500x1024?sig=2" class="d-block w-sm-100" alt="Imagem aleatória">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/random/1500x1024?sig=3" class="d-block w-sm-100" alt="Imagem aleatória">
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--         
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://source.unsplash.com/random/1280x1024?sig=1" class="d-block w-100" alt="Imagem aleatória">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/random/1280x1024?sig=2" class="d-block w-100" alt="Imagem aleatória">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/random/1280x1024?sig=3" class="d-block w-100" alt="Imagem aleatória">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+
+
+      <!-- Jumbotron -->
+      <!-- <div class="p-5 text-center bg-light my-85vh d-flex flex-column justify-content-center align-items-center">
+        <h1 class="mb-3">Heading</h1>
+        <h4 class="mb-3">Subheading</h4>
+        <a class="btn btn-primary" href="" role="button">Call to action</a>
+      </div> -->
+      <!-- Jumbotron -->
+
+      <div class="container my-5">
+        <div class="row text-center">
+          <h1 class="p-3">Lista de itens</h1>
+        </div>
+        <div class="row p-2">
+          <div class="col-sm-4">
+            <h2>Item 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure quas ducimus perferendis nostrum minima deleniti totam, sed laudantium voluptas quibusdam eligendi placeat vitae voluptate impedit unde? Recusandae, consequatur velit!</p>
+            <button type="button" class="btn my-bg-brown mb-3">Saiba mais</button>
+          </div>
+          <div class="col-sm-4">
+            <h2>Item 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque nostrum dolorum quibusdam facere consequuntur doloribus quos enim sequi vero aliquid, hic deleniti laboriosam excepturi aliquam. Natus reiciendis odit adipisci.</p>
+            <button type="button" class="btn my-bg-brown mb-3">Saiba mais</button>
+          </div>
+          <div class="col-sm-4">
+            <h2>Item 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo asperiores, maiores, voluptatum magnam ea dolore enim ratione quo rerum molestias cum cumque quasi vero autem eum quas delectus, illum totam.</p>
+            <button type="button" class="btn my-bg-brown mb-3">Saiba mais</button>
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div class="col-md-4">
+            <h2>Item 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure quas ducimus perferendis nostrum minima deleniti totam, sed laudantium voluptas quibusdam eligendi placeat vitae voluptate impedit unde? Recusandae, consequatur velit!</p>
+            <button type="button" class="btn my-bg-brown mb-3">Saiba mais</button>
+          </div>
+          <div class="col-md-4">
+            <h2>Item 5</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque nostrum dolorum quibusdam facere consequuntur doloribus quos enim sequi vero aliquid, hic deleniti laboriosam excepturi aliquam. Natus reiciendis odit adipisci.</p>
+            <button type="button" class="btn my-bg-brown mb-3">Saiba mais</button>
+          </div>
+          <div class="col-md-4">
+            <h2>Item 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure quas ducimus perferendis nostrum minima deleniti totam, sed laudantium voluptas quibusdam eligendi placeat vitae voluptate impedit unde? Recusandae, consequatur velit!</p>
+            <button type="button" class="btn my-bg-brown mb-3">Saiba mais</button>
+          </div>
+        </div>      
+      </div>
+    </main>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>

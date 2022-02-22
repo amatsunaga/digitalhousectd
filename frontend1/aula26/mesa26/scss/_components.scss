@@ -1,0 +1,43 @@
+// componentes reutilizáveis
+
+@use 'base';
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  text-align: center;
+}
+
+.card-game img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-game img:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
+  height: 350px;
+  width: 100%;
+  border: 10px groove base.$quaternary-color;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: base.$secondary-color;
+  color: base.$tertiary-color;
+}

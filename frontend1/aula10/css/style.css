@@ -10,8 +10,8 @@ body {
   background-color: #cccccc;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('https://gooutside.com.br/wp-content/uploads/sites/3/2020/09/fernando-de-noronha-recebera-apenas-turistas-que-ja-tiveram-covid-19-1280x720.jpg');
-  height: 821px;
-  background-size: 100% auto;
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
 }

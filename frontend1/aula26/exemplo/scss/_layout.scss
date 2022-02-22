@@ -1,0 +1,16 @@
+// cabeçalho, navegação, containers, grids, footer
+
+@use 'base';
+
+// nesting
+
+header {
+    height: 15vh;
+    background-color: base.$primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+    }
+}

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 120vh;
+}
+
+.externa {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 3px;
+  position: relative;
+}
+
+#caixa1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#caixa2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#caixa3 {
+  position: fixed;
+  top: 50%;
+  left: 47%;
+}
+
+.interna {
+  height: 50px;
+  width: 50px;
+  border: 3px solid black;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  text-align: center;
+}

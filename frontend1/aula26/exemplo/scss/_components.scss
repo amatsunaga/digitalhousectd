@@ -1,0 +1,26 @@
+// componentes reutilizáveis
+
+@use 'base';
+
+.info {
+    @extend %message-box;
+    border-color: base.$info-color;
+    color: base.$info-color;
+}
+
+.alert {
+    @extend %message-box;
+    border-color: base.$alert-color;
+    color: base.$info-color;
+}
+
+.success {
+    @include base.box(100px, 600px);
+    @include base.box-color(base.$success-color);
+
+}
+
+.alert-sm {
+    @include base.box(80px, 300px);
+    @include base.box-color(base.$alert-color);
+}

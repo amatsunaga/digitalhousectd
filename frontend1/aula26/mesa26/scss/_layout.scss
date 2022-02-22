@@ -1,0 +1,79 @@
+// cabeçalho, navegação, containers, grids, footer
+
+@use 'base';
+@use 'components';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: base.$primary-color;
+  color: base.$tertiary-color;
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+  gap: 5px;
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: base.$tertiary-color;
+      padding: 10px;
+      border-radius: 9px;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+header li a:hover {
+  background-color: base.$secondary-color;
+  color: base.$primary-color;
+}
+
+main {
+  padding: 15px 60px;
+}
+
+#rpg + #rts {
+  margin-top: 60px;
+}
+
+@media (min-width: 786px) and (max-width: 1065px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 785px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 344px) and (max-width: 492px) {
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    margin-bottom: 20px;
+  }
+  header li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 343px) {
+  header li a {
+    padding: 5px;
+  }
+
+  main {
+    padding: 15px 30px;
+  }
+}

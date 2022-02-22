@@ -1,0 +1,36 @@
+// variáveis, tipografia, mixin
+
+// variáveis
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+// variáveis globais
+$primary-color: black;
+$secondary-color: red;
+$tertiary-color: white;
+$quaternary-color: lightgray;
+
+$manrope: 'Manrope', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $manrope;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1::first-letter {
+  color: $secondary-color;
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding: 15px 0;
+}

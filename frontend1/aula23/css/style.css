@@ -1,0 +1,116 @@
+/* Reset */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+/* ------- */
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+#header {
+  padding: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: lightsalmon;
+}
+
+nav {
+  line-height: 2vh;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 5vw;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+#banner {
+  background-image: url("https://s1.1zoom.me/big0/471/France_Paris_Eiffel_Tower_541733_1280x853.jpg");
+  height: 88vh;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  background-color: lightsalmon;
+  position: absolute;
+  bottom: 25vh;
+  right: 15vw;
+  padding: 5vh;
+  border-radius: 20px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  color: purple;
+}
+
+.section {
+  width: 30vw;
+  padding: 10vh 5vh;
+  text-align: center;
+  margin: 10vh auto;
+  border: lightcoral solid 2px;
+  border-radius: 20px;
+}
+
+.section h1 {
+  margin-bottom: 5vh;
+}
+
+.section:target,
+#banner:target {
+  border: 5px solid salmon;
+}
+
+footer {
+  height: 10vh;
+  background-color: tomato;
+  color: rgb(77, 12, 141);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contato:target {
+  font-size: 2rem;
+  padding: 2vh;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section {
+    width: 50vw;
+  }
+}
