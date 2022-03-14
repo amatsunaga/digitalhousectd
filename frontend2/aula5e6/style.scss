@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  color: rgb(228, 241, 40);
+  background-color: rgb(59, 19, 122);
+}
+
+.main-menu {
+  font-family: "Bebas Neue", cursive;
+  color: rgb(59, 19, 122);
+  background-color: rgb(228, 241, 40);
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: 0.5s;
+}
+
+.main-menu-open {
+  left: 0px;
+}

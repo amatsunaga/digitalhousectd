@@ -26,11 +26,10 @@ function somaMap(arr) {
 
 function somaForEach(arr) {
   let soma5 = 0;
-  function somar(item) {
-    console.log((soma5 += item));
-  }
   console.log(`\nSoma for each:`);
-  arr.forEach(somar);
+  arr.forEach(function (num) {
+    console.log((soma5 += num));
+  });
 }
 
 function somaReduce(arr) {

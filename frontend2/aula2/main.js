@@ -23,7 +23,7 @@ function chooseOption() {
 
 // Escolha aleatória pela máquina (pedra, papel ou tesoura) e exibição dela para o usuário.
 function randomOption() {
-  let botChoice = parseInt(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
+  let botChoice = parseInt(Math.random() * 3 + 1);
 
   switch (botChoice) {
     case 1:
@@ -84,8 +84,9 @@ function jokenpo() {
   // Possibilidade de jogar novamente ou encerrar, ao término do jogo
   if (confirm("Gostaria de jogar de novo?")) {
     jokenpo();
-  }
-  window.close();
+  } else if (confirm("Tem certeza de que deseja sair do jogo?")) {
+    window.close();
+  } else jokenpo();
 }
 
 jokenpo();
