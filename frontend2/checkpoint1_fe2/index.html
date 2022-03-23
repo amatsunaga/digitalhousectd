@@ -8,33 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Checkpoint 01</h1>
+    <header>
+      <h1>Viagens Incríveis</h1>
+      <p>
+        Compartilhe as fotos das suas melhores viagens com quem você quiser!
+      </p>
+    </header>
+
     <section class="container shadow">
       <h2>Criar post</h2>
-      <form action="">
+      <form>
         <label for="titulo"></label>
-        <input type="text" id="titulo" placeholder="Título" />
+        <input type="text" id="titulo" placeholder="Qual foi seu destino?" />
         <label for="descricao"></label>
-        <input type="text" id="descricao" placeholder="Descrição" />
+        <input
+          type="text"
+          id="descricao"
+          placeholder="Conte-nos por que foi incrível!"
+        />
         <label for="imagem"></label>
-        <input type="url" id="imagem" placeholder="URL da imagem" />
-        <button type="submit" id="saveButton">Salvar</button>
+        <input type="url" id="imagem" placeholder="Insira o link da sua foto" />
+        <button type="submit" id="saveButton">Publicar</button>
       </form>
     </section>
 
     <main class="container">
-      <h2>Postagens</h2>
+      <h2>Álbum</h2>
       <div class="container postsContainer" id="postsContainer"></div>
     </main>
-
-    <footer></footer>
-
     <script src="./main.js"></script>
   </body>
 </html>
-
-<!-- O que falta fazer:
-  responsividade para desktop
-  escolher tema para a página
-  fazer o footer
--->

@@ -1,59 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Roboto:wght@400;900&display=swap");
 
-/* RESET */
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  box-sizing: border-box;
 }
-
-ol,
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* --------- */
+/* -------- */
 
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 {
+header {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+h1,
+h2 {
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: blueviolet;
+  font-size: 1.2rem;
   margin-top: 2rem;
 }
 
+h2 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+header p {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0.5rem auto;
+}
+
+section {
+  background-color: white;
+  min-width: 250px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .container {
-  margin: 2rem;
+  margin: 1.5rem;
   padding: 1rem;
   border-radius: 7px;
   display: flex;
@@ -69,27 +72,34 @@ h1 {
 
 input,
 button {
-  width: 100%;
-  height: 2rem;
+  font-size: 0.8rem;
   margin-bottom: 0.75rem;
+  padding: 0 0.5rem;
+  height: 2rem;
   border-radius: 7px;
   border-style: none;
-  padding: 0 0.5rem;
 }
 
 input {
+  width: 100%;
   background-color: rgb(238, 238, 238);
 }
 
 button {
-  margin: 0 auto;
-  background-color: blueviolet;
   color: white;
-  font-size: 1rem;
+  background-color: blueviolet;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+main h2 {
+  color: rgb(238, 238, 238);
+  text-shadow: 2px 2px black;
 }
 
 main.container {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .postsContainer {
@@ -99,7 +109,8 @@ main.container {
 }
 
 .card {
-  width: 80vw;
+  background-color: white;
+  width: 250px;
   height: fit-content;
   border-radius: 7px;
   color: blueviolet;
@@ -107,14 +118,22 @@ main.container {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
+.cardImage {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .cardImage img {
-  height: 20vh;
+  height: 300px;
   width: 100%;
   object-fit: cover;
   border-radius: 7px 7px 0 0;
 }
 
 .cardText {
+  height: 100px;
+  overflow: auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -122,5 +141,68 @@ main.container {
 }
 
 footer {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer p {
+  padding: 5px 20px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Responsividade */
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  input,
+  button {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  main div.container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 380px;
+  }
 }
