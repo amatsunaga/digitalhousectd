@@ -27,7 +27,7 @@ function createPost() {
   </div>`;
 
   const objectPost = document.createElement("objectPost");
-  objectPost.innerHTML = postElement;
+  objectPost.innerHTML += postElement;
 
   postsContainerReference.appendChild(objectPost);
 }
@@ -40,6 +40,20 @@ function clearForm() {
 
 saveButtonReference.addEventListener("click", function (event) {
   event.preventDefault();
-  createPost();
-  clearForm();
+
+  if (
+    tituloReference.checkValidity() &&
+    descricaoReference.checkValidity() &&
+    imagemReference.checkValidity()
+  ) {
+    createPost();
+    clearForm();
+    tituloReference.classList.remove("error");
+    descricaoReference.classList.remove("error");
+    imagemReference.classList.remove("error");
+  } else {
+    tituloReference.classList.add("error");
+    descricaoReference.classList.add("error");
+    imagemReference.classList.add("error");
+  }
 });

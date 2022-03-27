@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 7</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Adicionar um novo post</h1>
+      <h2>Crie uma nova postagem para os usuários</h2>
+    </header>
+
+    <main>
+      <form action="">
+        <span id="mensagemSucesso">O cadastro foi realizado com sucesso</span>
+        <div class="labelLines" id="titleBox">
+          <label for="titulo">Título</label>
+          <input type="text" name="" class="inputBox" id="titleInput" />
+          <span id="titleHint"
+            >Insira títulos que instiguem a curiosidade do leitor</span
+          >
+        </div>
+        <div class="labelLines catTema">
+          <label for="categoria">Categoria</label>
+          <select name="" class="inputBox" id="categoria">
+            <option value="tecnologia">Tecnologia</option>
+          </select>
+          <label for="tema">Tema</label>
+          <select name="" class="inputBox" id="tema">
+            <option value="javascript">JavaScript</option>
+          </select>
+        </div>
+        <div class="labelLines">
+          <label for="textInput">Texto</label>
+          <input type="text" name="" class="inputBox" id="textInput" />
+        </div>
+        <div class="labelLines" id="buttonsBox">
+          <button type="reset" class="buttons" id="resetButton">Limpar</button>
+          <button type="submit" class="buttons" id="submitButton">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

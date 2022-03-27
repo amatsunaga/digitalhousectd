@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(0, 0%, 11%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  font-family: "Roboto", sans-serif;
+  margin: 4rem 9.125rem 5.375rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h1.active {
+  color: hsla(144, 75%, 51%, 1);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+span {
+  opacity: 0;
+}
+
+span.show {
+  opacity: 1;
+}
+
+#mensagemSucesso {
+  margin-top: 1rem;
+  background-color: hsla(144, 75%, 51%, 1);
+}
+
+main {
+  background-color: hsla(0, 0%, 17%, 1);
+  margin: auto;
+  height: 52.1875rem;
+  border-radius: 12px;
+}
+
+form {
+  font-size: 1.125rem;
+  margin: 2rem;
+  position: relative;
+}
+
+.inputBox {
+  background-color: hsla(0, 0%, 26%, 1);
+  width: 100%;
+  line-height: 2rem;
+  border-radius: 12px;
+  border-style: none;
+}
+
+#textInput {
+  width: 100%;
+  height: 26.5rem;
+}
+
+.labelLines {
+  margin-top: 2rem;
+}
+
+.catTema {
+  display: flex;
+  gap: 1rem;
+}
+
+#buttonsBox {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.buttons {
+  color: hsla(0, 0%, 100%, 1);
+  border-radius: 12px;
+  border-style: none;
+  font-size: 1rem;
+  padding: 1.125rem;
+}
+
+#resetButton {
+  background-color: rgb(243, 72, 72);
+}
+
+#submitButton {
+  background-color: hsla(144, 75%, 51%, 1);
+}
+
+input.typing {
+  color: blue;
+}

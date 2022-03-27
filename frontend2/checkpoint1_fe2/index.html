@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkpoint 01</title>
+    <title>Checkpoint 1</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,23 +19,36 @@
       <h2>Criar post</h2>
       <form>
         <label for="titulo"></label>
-        <input type="text" id="titulo" placeholder="Qual foi seu destino?" />
+        <input
+          type="text"
+          id="titulo"
+          placeholder="Qual foi seu destino?"
+          minlength="3"
+          required
+        />
         <label for="descricao"></label>
         <input
           type="text"
           id="descricao"
           placeholder="Conte-nos por que foi incrível!"
+          required
         />
         <label for="imagem"></label>
-        <input type="url" id="imagem" placeholder="Insira o link da sua foto" />
+        <input
+          type="url"
+          id="imagem"
+          placeholder="Insira o link da sua foto"
+          required
+        />
         <button type="submit" id="saveButton">Publicar</button>
       </form>
     </section>
 
     <main class="container">
       <h2>Álbum</h2>
-      <div class="container postsContainer" id="postsContainer"></div>
+      <div class="container" id="postsContainer"></div>
     </main>
+
     <script src="./main.js"></script>
   </body>
 </html>
