@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  color: rgb(60, 214, 201);
+  background-color: rgb(6, 5, 80);
+}
+
+.main-menu {
+  font-family: "Roboto", sans-serif;
+  color: rgb(6, 5, 80);
+  background-color: rgb(60, 214, 201);
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: 0.5s;
+}
+
+.main-menu-open {
+  left: 0px;
+}
