@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>Cadastro</h1>
+
+      <div>
+        <label for="inputNome">Nome</label>
+        <input type="text" id="inputNome" />
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          name="tipoPessoa"
+          id="pessoaFisica"
+          value="fisica"
+          checked
+        />
+        <label for="pessoaFisica">Pessoa Física</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          name="tipoPessoa"
+          id="pessoaJuridica"
+          value="juridica"
+        />
+        <label for="pessoaJuridica">Pessoa Jurídica</label>
+      </div>
+
+      <div>
+        <label for="selectCidade">Cidade</label>
+        <select id="selectCidade">
+          <option value="saoPaulo">São Paulo</option>
+          <option value="santos">Santos</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="checkbox" id="inputTermos" />
+        <label for="">Concordo com os Termos e Condições</label>
+      </div>
+
+      <button type="submit" id="botaoConcluirCadastro">Concluir</button>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>

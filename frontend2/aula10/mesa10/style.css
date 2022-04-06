@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Roboto:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  background-color: lightgrey;
+  width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form input,
+button {
+  line-height: 1.5rem;
+  border-radius: 5px;
+}
+
+form input {
+  width: 100%;
+}
+
+form button {
+  background-color: rgb(146, 127, 233);
+  width: 40%;
+}
+
+div.button {
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
